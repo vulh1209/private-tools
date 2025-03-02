@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JSON - CSV/Excel Converter
+
+A Next.js web application for converting between JSON and CSV/Excel formats.
+
+## Features
+
+- Convert JSON files to CSV or Excel format
+- Convert CSV or Excel files to JSON format
+- Drag-and-drop interface for easy file uploads
+- Preview of the converted data
+- Download the converted files
+- Responsive design that works on desktop and mobile
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [react-dropzone](https://react-dropzone.js.org/) - File upload
+- [XLSX](https://sheetjs.com/) - Excel file processing
+- [PapaParse](https://www.papaparse.com/) - CSV file processing
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js 18+ and npm
+
+### Installation
+
+1. Clone the repository
+   ```
+   git clone <repository-url>
+   cd json-csv-converter
+   ```
+
+2. Install dependencies
+   ```
+   npm install
+   ```
+
+3. Run the development server
+   ```
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Usage
+
+1. Choose the conversion type you need (JSON to CSV/Excel or CSV/Excel to JSON)
+2. Drag and drop your file or click to select a file
+3. Select output format (for JSON to CSV/Excel)
+4. Click the Convert and Download button
+5. Save the converted file to your computer
+
+## Building for Production
+
+```
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## License
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+MIT
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Acknowledgements
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [SheetJS](https://sheetjs.com/) for Excel file handling
+- [PapaParse](https://www.papaparse.com/) for CSV parsing

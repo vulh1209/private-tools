@@ -8,17 +8,42 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --card-background: #ffffff;
+  --input-background: #f5f5f5;
+  --border-color: #e5e5e5;
+  --accent-color: #3b82f6;
+  --success-background: #ecfdf5;
+  --success-text: #047857;
+  --error-background: #fef2f2;
+  --error-text: #b91c1c;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #121212;
+  --foreground: #f5f5f5;
+  --card-background: #1e1e1e;
+  --input-background: #2a2a2a;
+  --border-color: #333333;
+  --accent-color: #60a5fa;
+  --success-background: #064e3b;
+  --success-text: #34d399;
+  --error-background: #7f1d1d;
+  --error-text: #fca5a5;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
