@@ -737,7 +737,7 @@ export default function DataMapperV2Page() {
                           />
                           <span className="font-mono text-sm">{fieldName}</span>
                           <span className="ml-2 text-xs text-gray-500 bg-gray-200 dark:bg-gray-700 px-1 rounded">
-                            {fieldType}
+                            {String(fieldType)}
                           </span>
                         </div>
                       ))}
